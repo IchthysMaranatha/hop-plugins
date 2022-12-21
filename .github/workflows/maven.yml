@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: maven build
-      run: mvn -B -pl googlesheets -am package
+      run: mvn -B -pl :googlesheets -am package
     - name: make artifact dir 
       run: mkdir artifacts 
     - name: add artifacts to publish

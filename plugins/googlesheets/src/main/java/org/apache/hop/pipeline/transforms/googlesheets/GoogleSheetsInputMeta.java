@@ -70,10 +70,8 @@ public class GoogleSheetsInputMeta
   @Injection(name = "worksheetId", group = "SHEET")
   private String worksheetId;
 
-  @Injection(name = "sampleFields", group = "INPUT_Fields")
-  private Integer sampleFields;
-
   @InjectionDeep private GoogleSheetsInputFields[] inputFields;
+  private Integer sampleFields;
 
   @Override
   public void setDefault() {
